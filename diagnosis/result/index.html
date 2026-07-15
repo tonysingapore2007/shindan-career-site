@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>診断結果 | 転職市場価値診断</title>
+<meta name="description" content="あなたの転職市場価値の診断結果と、おすすめの転職エージェントを表示します。">
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="header-back" href="/">&larr; トップに戻る</a>
+      <a class="site-logo" href="/">
+        <span class="site-logo__mark">C</span>
+        転職市場価値診断
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container" id="resultMain">
+      <section class="result-hero">
+        <div class="rank-badge" id="rankBadge"></div>
+        <div class="result-score"><strong id="scoreValue"></strong> / 100 点</div>
+        <h1 class="result-rank-title" id="rankTitle"></h1>
+        <p class="result-rank-desc" id="rankDesc"></p>
+        <span class="tag-badge" id="industryTag"></span>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">スコアの内訳</h2>
+        <div class="breakdown" id="breakdownMount"></div>
+      </section>
+
+      <section class="section">
+        <div class="agent-section__title">あなたにおすすめの転職エージェント</div>
+        <p class="agent-section__desc">業種と診断スコアをもとに、相性の良いエージェントをピックアップしました。</p>
+        <div id="agentMount"></div>
+      </section>
+
+      <div class="result-actions">
+        <a class="btn btn-outline btn-block" href="../" id="retryBtn">もう一度診断する</a>
+      </div>
+    </div>
+
+    <div class="container empty-state" id="resultEmpty" style="display:none;">
+      <div class="empty-state__title">診断結果が見つかりませんでした</div>
+      <p class="empty-state__desc">お手数ですが、もう一度診断をやり直してください。</p>
+      <a class="btn btn-primary" href="../">診断をはじめる</a>
+    </div>
+  </main>
+
+</div>
+
+<script src="../../js/data.js"></script>
+<script src="../../js/result.js"></script>
+</body>
+</html>

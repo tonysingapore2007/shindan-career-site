@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>診断ツール | 転職市場価値診断</title>
+<meta name="description" content="6つの質問に答えて、あなたの転職市場価値をスコア診断します。">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="header-back" href="/">&larr; トップに戻る</a>
+      <a class="site-logo" href="/">
+        <span class="site-logo__mark">C</span>
+        転職市場価値診断
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span id="progressLabel">Q1 / 6</span>
+          <span>診断中...</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__fill" id="progressFill"></div>
+        </div>
+      </div>
+
+      <div class="question-wrap">
+        <div id="questionMount"></div>
+        <p class="error-msg" id="errorMsg">選択肢を選んでください</p>
+      </div>
+
+      <div class="wizard-nav">
+        <button type="button" class="btn btn-outline" id="backBtn">戻る</button>
+        <button type="button" class="btn btn-primary" id="nextBtn">次へ</button>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+<script src="../js/data.js"></script>
+<script src="../js/diagnosis.js"></script>
+</body>
+</html>
