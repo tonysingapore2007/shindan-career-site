@@ -31,6 +31,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://shindan-career.com/salary/manufacturer/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://shindan-career.com/agent-comparison/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
